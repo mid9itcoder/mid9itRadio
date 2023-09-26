@@ -1,0 +1,90 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Victor Mono', monospace  ;
+            color:rgb(255, 255, 255);
+        }
+        nav{
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            
+        }
+
+        h1{
+            font-size: 52px;
+            margin-bottom: 32px;
+             
+        }
+        h2{
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        header{
+            height: 100vh;
+            position: relative;
+            /*how to give shadow to a background image*/
+            background-image:linear-gradient(
+                rgba(0, 0, 0,  0.5),
+                rgba(0, 0, 0, 0.5)), 
+                url(/images/pexels-davis-sánchez-3916376.jpg);
+            background-size: cover;
+            /*how to darken the background image*/
+
+        }
+
+        body{
+            background-color: black;
+        }
+
+        section{
+            padding: 96px 0px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        .container{
+            margin: 0 auto ;
+            width: 1000px;
+        }
+
+        .header-container{
+            width: 1000px;
+            position: absolute;
+            /* In relation to PARENT size */
+            left: 50%;
+            top: 50%;
+            /* In relation to Element size */
+            transform: translate(-50%, -50%);
+        }
+
+        .header-container-inner{
+            width: 40%;
+
+        }
+
+        
+        .btn:link, .btn:visited{
+            font-size: 15px;
+            font-weight: 600;
+            background-color: rgb(204, 0, 255);
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 9px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: rgb(204, 0, 255);
+        }
